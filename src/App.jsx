@@ -134,8 +134,8 @@ const About = () => {
                             </div>
                             <p className="text-muted line-height-lg mb-4">
                                 {t(
-                                    "Tôi là sinh viên năm cuối ngành Kỹ thuật phần mềm tại HUTECH. Trong suốt quá trình học, tôi đã tích lũy được kinh nghiệm thực chiến qua nhiều dự án nhóm và cá nhân — nổi bật là dự án Smart Tour Da Lat được triển khai thực tế trên môi trường production. Về Backend, tôi có kinh nghiệm xây dựng RESTful API bảo mật bằng C# .NET và Spring Boot. Về Frontend, tôi xây dựng giao diện responsive với HTML5, CSS3, JavaScript, Bootstrap và ReactJS. Tôi có khả năng làm việc linh hoạt ở cả hai mảng và đặc biệt hứng thú với kiến trúc Fullstack.",
-                                    "I am a final-year Software Engineering student at HUTECH with hands-on experience through multiple group and individual projects — most notably the Smart Tour Da Lat platform deployed to live production. On the Backend side, I build secure RESTful APIs using C# .NET and Spring Boot. On the Frontend side, I craft responsive interfaces with HTML5, CSS3, JavaScript, Bootstrap, and ReactJS. I work flexibly across both domains and am especially passionate about Fullstack architecture."
+                                    "Tôi là sinh viên năm cuối ngành Kỹ thuật phần mềm tại HUTECH. Trong suốt quá trình học, tôi đã tích lũy được kinh nghiệm thực chiến qua nhiều dự án nhóm và cá nhân. Về Backend, tôi có kinh nghiệm xây dựng RESTful API bảo mật bằng C# .NET và Spring Boot. Về Frontend, tôi xây dựng giao diện responsive với HTML5, CSS3, JavaScript, Bootstrap và ReactJS. Đặc biệt, tôi có kiến thức nền tảng vững chắc về Testing & QA, mong muốn áp dụng tư duy phân tích và kỹ năng lập trình để đảm bảo chất lượng phần mềm và thực hiện kiểm thử nghiêm ngặt.",
+                                    "I am a final-year Software Engineering student at HUTECH with hands-on experience through multiple group and individual projects. On the Backend side, I build secure RESTful APIs using C# .NET and Spring Boot. On the Frontend side, I craft responsive interfaces. Most importantly, I have a strong foundation in Testing & QA, eager to apply analytical thinking and programming skills to ensure software quality and perform rigorous testing."
                                 )}
                             </p>
                             <div className="bg-light-alt p-4 rounded-3">
@@ -147,12 +147,12 @@ const About = () => {
                                         "Tìm kiếm cơ hội thực tập / việc làm tại vị trí ",
                                         "Seeking internship or full-time position as "
                                     )}
-                                    <span className="text-primary fw-bold">Backend</span>
+                                    <span className="text-primary fw-bold">QA/QC Intern</span>
                                     {t(" hoặc ", " or ")}
-                                    <span className="text-primary fw-bold">Fullstack Developer</span>
+                                    <span className="text-primary fw-bold">Backend Developer</span>
                                     {t(
-                                        " để đóng góp và phát triển bản thân trong môi trường chuyên nghiệp.",
-                                        " to grow and contribute in a professional tech environment."
+                                        " để áp dụng kỹ năng kỹ thuật vào kiểm thử và phát triển hệ thống.",
+                                        " to apply technical skills in system testing and development."
                                     )}
                                 </p>
                             </div>
@@ -187,11 +187,11 @@ const Skills = () => {
                                 <div className="row g-4 text-muted">
 
                                     {/* Frontend */}
-                                    <div className="col-md-6">
+                                    <div className="col-md-4">
                                         <div className="p-3 rounded-3 border border-primary border-opacity-25 bg-primary bg-opacity-10 h-100">
                                             <h6 className="fw-bold text-primary mb-3"><i className="bi bi-browser-chrome me-1"></i>Frontend</h6>
                                             <div className="d-flex flex-wrap gap-2">
-                                                {["HTML5", "CSS3", "JavaScript (ES6+)", "Bootstrap 5", "ReactJS", "Responsive Design"].map(s => (
+                                                {["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "ReactJS"].map(s => (
                                                     <span key={s} className="badge bg-white border border-primary-subtle text-primary-emphasis px-2 py-1 rounded-pill small">{s}</span>
                                                 ))}
                                             </div>
@@ -199,12 +199,24 @@ const Skills = () => {
                                     </div>
 
                                     {/* Backend */}
-                                    <div className="col-md-6">
+                                    <div className="col-md-4">
                                         <div className="p-3 rounded-3 border border-success border-opacity-25 bg-success bg-opacity-10 h-100">
                                             <h6 className="fw-bold text-success mb-3"><i className="bi bi-server me-1"></i>Backend</h6>
                                             <div className="d-flex flex-wrap gap-2">
-                                                {["C# / .NET Core", "ASP.NET MVC", "Spring Boot", "Node.js", "REST API", "JWT Auth", "SignalR / WebSocket"].map(s => (
+                                                {["C# / .NET Core", "ASP.NET MVC", "Spring Boot", "Node.js", "REST API"].map(s => (
                                                     <span key={s} className="badge bg-white border border-success-subtle text-success-emphasis px-2 py-1 rounded-pill small">{s}</span>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Testing & QA */}
+                                    <div className="col-md-4">
+                                        <div className="p-3 rounded-3 border border-danger border-opacity-25 bg-danger bg-opacity-10 h-100">
+                                            <h6 className="fw-bold text-danger mb-3"><i className="bi bi-bug me-1"></i>Testing & QA</h6>
+                                            <div className="d-flex flex-wrap gap-2">
+                                                {["API Testing (Postman)", "Database Testing", "Integration Testing", "System Logic Validation"].map(s => (
+                                                    <span key={s} className="badge bg-white border border-danger-subtle text-danger-emphasis px-2 py-1 rounded-pill small">{s}</span>
                                                 ))}
                                             </div>
                                         </div>
@@ -227,7 +239,7 @@ const Skills = () => {
                                         <div className="p-3 rounded-3 border border-warning border-opacity-25 bg-warning bg-opacity-10 h-100">
                                             <h6 className="fw-bold text-warning mb-3"><i className="bi bi-database me-1"></i>Database</h6>
                                             <div className="d-flex flex-wrap gap-2">
-                                                {["MySQL", "SQL Server", "MongoDB"].map(s => (
+                                                {["MySQL", "SQL Server", "MongoDB", "Entity Framework"].map(s => (
                                                     <span key={s} className="badge bg-white border border-warning-subtle text-warning-emphasis px-2 py-1 rounded-pill small">{s}</span>
                                                 ))}
                                             </div>
@@ -239,7 +251,7 @@ const Skills = () => {
                                         <div className="p-3 rounded-3 border border-secondary border-opacity-25 bg-secondary bg-opacity-10 h-100">
                                             <h6 className="fw-bold text-secondary mb-3"><i className="bi bi-tools me-1"></i>Tools & Concepts</h6>
                                             <div className="d-flex flex-wrap gap-2">
-                                                {["Git / GitHub", "Docker", "Postman", "Figma", "Trello", "OOP", "MVC"].map(s => (
+                                                {["Git / GitHub", "Docker", "Postman", "Figma (UI/UX review)", "OOP", "MVC"].map(s => (
                                                     <span key={s} className="badge bg-white border border-secondary-subtle text-secondary-emphasis px-2 py-1 rounded-pill small">{s}</span>
                                                 ))}
                                             </div>
