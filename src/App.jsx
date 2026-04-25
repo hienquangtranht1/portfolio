@@ -134,8 +134,8 @@ const About = () => {
                             </div>
                             <p className="text-muted line-height-lg mb-4">
                                 {t(
-                                    "Tôi là sinh viên năm cuối ngành Kỹ thuật phần mềm tại HUTECH. Trong suốt quá trình học, tôi đã tích lũy được kinh nghiệm thực chiến qua nhiều dự án nhóm và cá nhân. Về Backend, tôi có kinh nghiệm xây dựng RESTful API bảo mật bằng C# .NET và Spring Boot. Về Frontend, tôi xây dựng giao diện responsive với HTML5, CSS3, JavaScript, Bootstrap và ReactJS. Đặc biệt, tôi có kiến thức nền tảng vững chắc về Testing & QA, mong muốn áp dụng tư duy phân tích và kỹ năng lập trình để đảm bảo chất lượng phần mềm và thực hiện kiểm thử nghiêm ngặt.",
-                                    "I am a final-year Software Engineering student at HUTECH with hands-on experience through multiple group and individual projects. On the Backend side, I build secure RESTful APIs using C# .NET and Spring Boot. On the Frontend side, I craft responsive interfaces. Most importantly, I have a strong foundation in Testing & QA, eager to apply analytical thinking and programming skills to ensure software quality and perform rigorous testing."
+                                    "Tôi là sinh viên năm cuối ngành Kỹ thuật phần mềm tại HUTECH. Trong suốt quá trình học, tôi đã tích lũy được kinh nghiệm thực chiến qua nhiều dự án nhóm và cá nhân. Về Backend, tôi có kinh nghiệm phát triển hệ thống với đa dạng ngôn ngữ như C# (.NET Core), Java (Spring Boot), JavaScript (Node.js) và PHP. Về Frontend, tôi xây dựng giao diện responsive với HTML5, CSS3, JavaScript, Bootstrap và ReactJS. Đặc biệt, tôi có kiến thức nền tảng vững chắc về Testing & QA, mong muốn áp dụng tư duy phân tích và kỹ năng lập trình để đảm bảo chất lượng phần mềm và thực hiện kiểm thử nghiêm ngặt.",
+                                    "I am a final-year Software Engineering student at HUTECH with hands-on experience through multiple group and individual projects. On the Backend side, I have experience developing systems using various languages such as C# (.NET Core), Java (Spring Boot), JavaScript (Node.js), and PHP. On the Frontend side, I craft responsive interfaces. Most importantly, I have a strong foundation in Testing & QA, eager to apply analytical thinking and programming skills to ensure software quality and perform rigorous testing."
                                 )}
                             </p>
                             <div className="bg-light-alt p-4 rounded-3">
@@ -203,7 +203,7 @@ const Skills = () => {
                                         <div className="p-3 rounded-3 border border-success border-opacity-25 bg-success bg-opacity-10 h-100">
                                             <h6 className="fw-bold text-success mb-3"><i className="bi bi-server me-1"></i>Backend</h6>
                                             <div className="d-flex flex-wrap gap-2">
-                                                {["C# / .NET Core", "ASP.NET MVC", "Spring Boot", "Node.js", "REST API"].map(s => (
+                                                {["C# / .NET Core", "Java / Spring Boot", "JavaScript / Node.js", "PHP", "REST API"].map(s => (
                                                     <span key={s} className="badge bg-white border border-success-subtle text-success-emphasis px-2 py-1 rounded-pill small">{s}</span>
                                                 ))}
                                             </div>

@@ -6,15 +6,6 @@ const Projects = () => {
 
     const personalProjects = [
         {
-            title: "Hospital Booking (PHP Demo)",
-            url: "https://github.com/hienquangtranht1/DoAnCoSo-DAT-LICH-KHAM-BENH-DEMO",
-            color: "danger",
-            descVi: "Dự án tiền nhiệm của hệ thống đặt lịch khám, xây dựng bằng PHP thuần (Core PHP) và MySQL. Đặt nền móng logic và UI cơ bản trước khi được nâng cấp lên kiến trúc C# .NET.",
-            descEn: "Predecessor of the hospital booking system, built with Core PHP and MySQL. Laid the logical and basic UI foundation before being upgraded to C# .NET architecture.",
-            noteVi: "Nền tảng PHP & MySQL cơ bản.",
-            noteEn: "Core PHP & MySQL foundation."
-        },
-        {
             title: "P2P Chat App",
             url: "https://github.com/hienquangtranht1/P2P_CHAT",
             color: "primary",
@@ -205,6 +196,38 @@ const Projects = () => {
                                 <div className="pt-3 border-top border-light">
                                     {["Node.js", "JWT Auth", "WebSocket", "REST API", "MongoDB"].map(tag => (
                                         <span key={tag} className="badge bg-info-subtle text-info border border-info-subtle px-3 py-2 me-2 mb-2 rounded-pill">{tag}</span>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Hospital Booking (PHP Demo) */}
+                        <div className="col-lg-12">
+                            <div className="project-card bg-white rounded-4 p-4 p-lg-5 shadow-sm border-start border-danger border-4">
+                                <div className="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+                                    <div>
+                                        <h4 className="fw-bold m-0 text-dark">
+                                            <a href="https://github.com/hienquangtranht1/DoAnCoSo-DAT-LICH-KHAM-BENH-DEMO" target="_blank" rel="noreferrer"
+                                                className="text-decoration-none text-dark hover-primary">Hospital Booking System (PHP Demo)</a>
+                                        </h4>
+                                        <p className="text-muted small mb-0 mt-1">PHP · MySQL · JavaScript · Bootstrap · HTML5/CSS3</p>
+                                    </div>
+                                    <a href="https://github.com/hienquangtranht1/DoAnCoSo-DAT-LICH-KHAM-BENH-DEMO" target="_blank" rel="noreferrer" className="text-danger fs-3 git-icon">
+                                        <i className="bi bi-github"></i>
+                                    </a>
+                                </div>
+                                <p className="text-muted fs-6 mb-4">
+                                    {t("Dự án tiền nhiệm của hệ thống đặt lịch khám bệnh viện, được xây dựng bằng PHP thuần (Core PHP) và MySQL. Đặt nền móng logic và giao diện cơ bản trước khi nâng cấp lên hệ thống C# .NET.", "Predecessor of the hospital booking system, built with Core PHP and MySQL. Laid the logical and basic UI foundation before being upgraded to C# .NET system.")}
+                                </p>
+                                <h6 className="fw-bold text-dark mb-3">{t("Phụ trách Phát triển chính:", "Core Development Responsibilities:")}</h6>
+                                <ul className="text-muted small mb-4 tech-list">
+                                    <li>{t("Phát triển các tính năng quản lý lịch khám và hồ sơ bệnh nhân bằng ngôn ngữ PHP thuần.", "Developed appointment scheduling and patient profile management features using Core PHP.")}</li>
+                                    <li>{t("Thiết kế và truy vấn cơ sở dữ liệu MySQL để lưu trữ thông tin y tế an toàn.", "Designed and queried MySQL database to securely store medical information.")}</li>
+                                    <li>{t("Xây dựng giao diện web tương tác và responsive sử dụng HTML5, CSS3, JavaScript và Bootstrap.", "Built an interactive and responsive web interface using HTML5, CSS3, JavaScript, and Bootstrap.")}</li>
+                                </ul>
+                                <div className="pt-3 border-top border-light">
+                                    {["Core PHP", "MySQL", "JavaScript", "HTML/CSS", "Bootstrap"].map(tag => (
+                                        <span key={tag} className="badge bg-danger-subtle text-danger border border-danger-subtle px-3 py-2 me-2 mb-2 rounded-pill">{tag}</span>
                                     ))}
                                 </div>
                             </div>
