@@ -6,6 +6,15 @@ const Projects = () => {
 
     const personalProjects = [
         {
+            title: "Hospital Booking (PHP Demo)",
+            url: "https://github.com/hienquangtranht1/DoAnCoSo-DAT-LICH-KHAM-BENH-DEMO",
+            color: "danger",
+            descVi: "Dự án tiền nhiệm của hệ thống đặt lịch khám, xây dựng bằng PHP thuần (Core PHP) và MySQL. Đặt nền móng logic và UI cơ bản trước khi được nâng cấp lên kiến trúc C# .NET.",
+            descEn: "Predecessor of the hospital booking system, built with Core PHP and MySQL. Laid the logical and basic UI foundation before being upgraded to C# .NET architecture.",
+            noteVi: "Nền tảng PHP & MySQL cơ bản.",
+            noteEn: "Core PHP & MySQL foundation."
+        },
+        {
             title: "P2P Chat App",
             url: "https://github.com/hienquangtranht1/P2P_CHAT",
             color: "primary",
